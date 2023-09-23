@@ -5,7 +5,7 @@
 /* Step 2 - Variables */
 const fullName = "Jacob Perry";
 const currentYear = 2023;
-const profilePicture = "/images/ImageOfMe.jpg";
+const profilePicture = "images/ImageOfMe.jpg";
 
 /* Step 3 - Element Variables */
 const nameElement = document.getElementById("name");
