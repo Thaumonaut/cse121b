@@ -60,6 +60,24 @@ let currentYear = currentDate.getFullYear()
 
 document.getElementById("year").innerText = currentYear;
 
+
+// I am not sure if there was a mistake in the assignment so I made my own solution for this section.
+const DISCOUNT = 0.05;
+let discount = (subtotal) => subtotal - (subtotal * DISCOUNT)
+
+function MemberDiscount() {
+    let isMemeber = document.getElementById("member").checked;
+    let subtotalValue = Number(document.querySelector("#subtotal").value)
+
+    if (isMemeber) {
+        subtotalValue = discount(subtotalValue)
+    }
+
+    document.getElementById("total").innerHTML = subtotalValue;
+}
+
+document.getElementById("getTotal").addEventListener("click", MemberDiscount)
+
 /* ARRAY METHODS - Functional Programming */
 /* Output Source Array */
 let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
