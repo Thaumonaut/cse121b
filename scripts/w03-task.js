@@ -7,8 +7,8 @@ function add (number1, number2) {
 }
 
 function addNumbers () {
-    let add1 = Number(document.querySelector("#add1").value)
-    let add2 = Number(document.querySelector("#add2").value)
+    let add1 = Number(document.getElementById("add1").value)
+    let add2 = Number(document.getElementById("add2").value)
     let sum = add(add1, add2);
 
     document.querySelector("#sum").value = sum;
