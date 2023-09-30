@@ -155,3 +155,11 @@ footer {
     }
 
 }
+
+#temples img {
+    max-width: 400px;
+}
+
+#gridly {
+    align-items: start;
+}
