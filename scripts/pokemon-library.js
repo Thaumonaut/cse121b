@@ -17,7 +17,7 @@ export async function SelectMoves(pokemon) {
     const information = await GetPokemonInformation(pokemon)
     const moves = information.moves
     const randomList = GetRandomArrayOfLength(4, information.moves.length)
-    const movesList = randomList.map(ID => Capitilize(moves[ID].move.name.replace(/-/g, " ")))
+    const movesList = randomList.map(ID => Capitalize(moves[ID].move.name.replace(/-/g, " ")))
     return movesList
 }
 
@@ -52,16 +52,16 @@ async function PopulateSelect() {
             const option = document.createElement('option');
             option.value = name;
             option.id = name;
-            option.textContent = Capitilize(name)
+            option.textContent = Capitalize(name)
             return option
         })
 
     document.querySelector('#type-list').append(...options)
 }
 
-export function Capitilize(input) {
+export function Capitalize(input) {
     return input.split(" ")
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .map(word => `${word.charAt(0).toUpperCase()}${word.slice(1)}`)
         .join(" ")
 }
 

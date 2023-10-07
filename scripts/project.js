@@ -1,4 +1,4 @@
-import {GetPokemonOfType, GetPokemonInformation, SelectTeam, Capitilize, SelectMoves} from "./pokemon-library.js" 
+import {GetPokemonOfType, GetPokemonInformation, SelectTeam, Capitalize, SelectMoves} from "./pokemon-library.js" 
 
 let withMoves = false;
 
@@ -27,7 +27,7 @@ function RenderPokemon(team) {
         img.setAttribute('alt', pokemon.name.replace("-", " "))
         
         const name = document.createElement('h2');
-        name.textContent = Capitilize(pokemon.name.replace(/-/g, " "));
+        name.textContent = Capitalize(pokemon.name.replace(/-/g, " "));
 
         const typeTags = information.types.map(item => {
             return `<p>${item.type.name}</p>`
