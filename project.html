@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | CSE 121b | W02: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/project.css">
+</head>
+
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="w01-task.html">W1 Task</a></li>
+      <li><a href="w03-task.html">W3 Task</a></li>
+      <li><a href="w04-task.html">W4 Task</a></li>
+      <li><a href="w05-task.html">W5 Task</a></li>
+      <li><a href="project.html">Project</a></li>
+    </ul>
+  </nav>
+  <main id="home">
+    <h1>Random Pokemon Gym Team</h1>
+    <p>Select a type from the dropdown to get a randomly generated pokemon team of that type.</p>
+    <form>
+        <select title="Select a type" id="type-list">
+            <option value="" selected hidden>Select a type</option>
+        </select>
+        <label for="moves">With Moves</label>
+        <input name="moves" id="moves" type="checkbox">
+
+        <label for="team-size">Team Size: </label>
+        <input name="team-size" id="size-input" type="number" max="6" min="1" value="6">
+        
+        <button style="float: right;" id="generate-button">Generate Team</button>
+    </form>
+    <section id="pokemon-team"></section>
+  </main>
+  <footer>
+    &copy;<span id="year"></span> | About Me | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/project.js" type="module"></script>
+</body>
+
+</html>
