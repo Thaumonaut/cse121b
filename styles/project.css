@@ -8,7 +8,17 @@
     border-radius: 5px;
     box-shadow: 4px 4px 15px #1b8dff34;
     min-width: 200px;
-    min-height: 300px;
+    min-height: 400px;
+}
+
+#pokemon-team article h2 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#pokemon-team article img {
+    margin-top: 20px;
+    margin-bottom: 5px;
 }
 
 #pokemon-team {
@@ -35,8 +45,105 @@ input[type="number"] {
     max-width: 50px;
 }
 
-ol {
+#pokemon-team ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px 25px
+    gap: 5px 25px;
+    margin: 20px 5px 40px 5px;
+    list-style: none;
+    text-align: center;
+}
+
+#pokemon-team ul li {
+    padding: 5px 10px;
+    border: 1px solid #1b8dffa1;
+    background-color: #ffffff;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.type-tags {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.type-tags p {
+    font-size: small;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin: 0px 3px;
+    color: white;
+}
+
+.normal {
+    background-color: rgb(122, 121, 105);
+    color: rgb(122, 121, 105);
+}
+.flying {
+    background-color: rgb(136, 106, 185);
+    color: rgb(136, 106, 185);
+}
+.fire {
+    background-color: rgb(236, 145, 26);
+    color: rgb(236, 145, 26);
+}
+.psychic {
+    background-color: rgb(212, 62, 137);
+    color: rgb(212, 62, 137);
+}
+.water {
+    background-color: rgb(49, 132, 241);
+    color: rgb(49, 132, 241);
+}
+.bug {
+    background-color: rgb(127, 165, 57);
+    color: rgb(127, 165, 57);
+}
+.grass {
+    background-color: rgb(16, 189, 30);
+    color: rgb(16, 189, 30);
+}
+.rock {
+    background-color: rgb(117, 111, 74);
+    color: rgb(117, 111, 74);
+}
+.electric {
+    background-color: rgb(235, 223, 53);
+    color: rgb(235, 223, 53);
+}
+.ghost {
+    background-color: rgb(111, 65, 129);
+    color: rgb(111, 65, 129);
+}
+.dragon {
+    background-color: rgb(111, 83, 238);
+    color: rgb(111, 83, 238);
+}
+.fighting {
+    background-color: rgb(155, 45, 45);
+    color: rgb(155, 45, 45);
+}
+.dark {
+    background-color: rgb(61, 53, 37);
+    color: rgb(61, 53, 37);
+}
+.steel {
+    background-color: rgb(146, 146, 146);
+    color: rgb(146, 146, 146);
+}
+.ground {
+    background-color: rgb(223, 202, 112);
+    color: rgb(223, 202, 112);
+}
+.fairy {
+    background-color: rgb(233, 155, 191);
+    color: rgb(233, 155, 191);
+}
+.ice {
+    background-color: rgb(118, 219, 245);
+    color: rgb(118, 219, 245);
+}
+.poison {
+    background-color: rgb(152, 17, 214);
+    color: rgb(152, 17, 214);
 }
